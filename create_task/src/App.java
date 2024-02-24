@@ -3,12 +3,14 @@ import java.util.Scanner;
 import java.util.regex.Pattern;
 
 public class App {
+    // Репозиторий и наименования папок
     final public static String с_rep_name     = "D:/Downloads";
-    final public static String c_correct_name = "TASK-.[0-9]*";
     final public static String c_first_dir    = "first";
     final public static String c_second_dir   = "second";
     final public static String c_father_dir   = "father";
     final public static String c_mother_dir   = "mother";
+    // Шаблон наименования папки задачи
+    final public static String c_correct_name = "TASK-.[0-9]*";
 
     // Кодировка считываемого, чтобы русские буквы корректно отображались
     final public static String l_encoding = System.getProperty("console.encoding", "cp866");
@@ -19,7 +21,8 @@ public class App {
     {
         // Чистим консоль, чтобы не мусорилась
         clean_cmd();
-
+        
+        // Переменные с данными о папках и файлах
         String l_task_name;
         String l_task_dir;
         String l_type_dir;
